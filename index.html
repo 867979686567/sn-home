@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>S@N Content Hub</title>
+<title>VOODAC</title>
 
+<script src="images.js"></script>
 <script src="content.js"></script>
 
 <style>
@@ -48,43 +49,6 @@ body {
     justify-content: space-between;
     align-items: center;
     user-select: none;
-}
-.cat-title::after {
-    content: '›';
-    font-size: 18px;
-    transition: transform 0.2s var(--snappy);
-    opacity: 0.4;
-}
-.cat-item.expanded .cat-title::after { transform: rotate(90deg); }
-.cat-content {
-    font-size: 13px;
-    line-height: 1.55;
-    padding: 12px 14px;
-    border-top: 1px solid var(--border);
-    display: none;
-}
-.cat-item.expanded .cat-content { display: block; }
-.menu-link-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 11px 14px;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    margin-bottom: 8px;
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--fg);
-    font-size: 13px;
-    font-weight: 500;
-    transition: background 0.15s;
-}
-.menu-link-item:hover { background: rgba(128,128,128,0.1); }
-.menu-link-item::after {
-    content: '↗';
-    margin-left: auto;
-    opacity: 0.35;
-    font-size: 14px;
 }
 #app {
     padding: calc(var(--topbar-h) + 18px) 16px 18px;
@@ -148,31 +112,6 @@ a { color: inherit; }
 </style>
 </head>
 <body>
-
-<div id="topbar">
-    <div id="logoText" oncontextmenu="return false;" ondragstart="return false;">
-        <img id="logoTextImg" alt="VOODAC" draggable="false">
-    </div>
-    <div id="menuBtn" role="button" aria-label="Open menu" tabindex="0"
-         oncontextmenu="return false;"
-         onclick="toggleMenu()"
-         onkeydown="if(event.key==='Enter'||event.key===' ')toggleMenu()">
-        <img id="menuBtnImg" alt="" draggable="false">
-    </div>
-</div>
-
-<div id="menuOverlay" onclick="handleOverlayClick(event)">
-    <div id="menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
-        <span id="menuClose" role="button" tabindex="0" aria-label="Close menu"
-              onclick="toggleMenu()"
-              onkeydown="if(event.key==='Enter')toggleMenu()">✕</span>
-        <div id="menuScroll">
-            <div id="catRoot"></div>
-            <div id="menuLinks"></div>
-        </div>
-    </div>
-</div>
-
 <div id="app"></div>
 <div id="footer"></div>
 
