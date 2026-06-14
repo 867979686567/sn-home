@@ -7,7 +7,7 @@ There is now more to your noon as <b>Sunday at Noon is back</b>. Expect first vi
 </bg>
 [/box2]
 
-[video1=<iframe width="560" height="315" src="https://www.youtube.com/embed/SiQ44H9uGns?si=H0KVOVn3G4RoIICe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[video1=https://www.youtube.com/embed/SiQ44H9uGns?si=H0KVOVn3G4RoIICe]
 
 [box1=June - July Forecast]
 Thanks for visiting the Sunday at Noon Content Hub. Here at S@N, we want to provide a quality experience for you to catch up on the latest of news, whether it's at noon on a Sunday or any other time. <br>Any issues, please contact <link=mailto:nexus44.solder@icloud.com>S@N</link>.
