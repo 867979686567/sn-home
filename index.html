@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>S@N Content Hub</title>
 
-<script src="images.js"></script>
 <script src="content.js"></script>
 
 <style>
@@ -30,114 +29,6 @@ body {
     transition: background var(--trans), color var(--trans);
     overflow-x: hidden;
     min-height: 100vh;
-}
-#topbar {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    height: var(--topbar-h);
-    padding: 0 18px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--border);
-    background: var(--bg);
-    z-index: 1000;
-    transition: background var(--trans), border-color var(--trans);
-}
-#logoText {
-    height: 28px;
-    display: block;
-    user-select: none;
-    -webkit-user-select: none;
-    pointer-events: auto;
-    cursor: default;
-    -webkit-touch-callout: none;
-}
-#logoText img {
-    height: 100%;
-    width: auto;
-    display: block;
-    pointer-events: none;
-    -webkit-user-drag: none;
-}
-#menuBtn {
-    height: 38px;
-    width: 38px;
-    cursor: pointer;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.15s;
-    -webkit-touch-callout: none;
-    user-select: none;
-}
-#menuBtn:active { opacity: 0.6; }
-#menuBtn img {
-    height: 100%;
-    width: auto;
-    pointer-events: none;
-    -webkit-user-drag: none;
-}
-#menuOverlay {
-    position: fixed;
-    inset: 0;
-    z-index: 1999;
-    pointer-events: none;
-}
-#menuOverlay.open { pointer-events: auto; }
-#menu {
-    position: fixed;
-    top: 0; right: 0;
-    width: min(320px, 88vw);
-    height: 100dvh;
-    background: var(--bg);
-    border-left: 1px solid var(--border);
-    z-index: 2000;
-    display: flex;
-    flex-direction: column;
-    transform-origin: calc(100% - 28px) 32px;
-    transform: scale(0.05);
-    opacity: 0;
-    filter: blur(12px);
-    pointer-events: none;
-    transition:
-        transform 0.38s var(--snappy),
-        opacity 0.22s ease,
-        filter 0.3s ease;
-}
-#menu.open {
-    transform: scale(1);
-    opacity: 1;
-    filter: blur(0px);
-    pointer-events: auto;
-}
-#menuClose {
-    padding: 16px 20px;
-    font-size: 28px;
-    line-height: 1;
-    cursor: pointer;
-    text-align: right;
-    display: block;
-    flex-shrink: 0;
-    color: var(--fg);
-    transition: opacity 0.15s;
-}
-#menuClose:active { opacity: 0.5; }
-#menuScroll {
-    flex: 1;
-    overflow-y: auto;
-    padding: 4px 16px 20px;
-    -webkit-overflow-scrolling: touch;
-}
-.menu-section-label {
-    font-size: 9px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--fg);
-    opacity: 0.35;
-    margin: 18px 0 6px;
-    padding: 0 2px;
 }
 .cat-item {
     border: 1px solid var(--border);
